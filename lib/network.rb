@@ -26,4 +26,12 @@ attr_reader :name, :shows
       end
       result
     end
+
+  def shows_by_actor
+    result = Hash.new([])
+      @shows.each do |show|
+        result[show.actors.pop] = show
+      end
+      result
+  end
 end
