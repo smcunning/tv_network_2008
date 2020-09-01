@@ -5,4 +5,7 @@ attr_reader :name, :shows
     @shows = []
   end
 
+  def add_show(show)
+    @shows << show
+  end
 end
