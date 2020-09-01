@@ -18,4 +18,12 @@ attr_reader :name, :shows
       character.salary > 500_000 && character.name == character.name.upcase
     end
   end
+
+  def actors_by_show
+    result = Hash.new([])
+      @shows.each do |show|
+        result[show] = show.actors
+      end
+      result
+    end
 end
