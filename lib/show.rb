@@ -26,5 +26,4 @@ class Show
     end
     actors
   end 
-
 end
