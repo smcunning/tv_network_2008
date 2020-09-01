@@ -1,3 +1,8 @@
 class Network
 
-end 
+  def initialize(name)
+    @name = name
+    @shows = []
+  end
+
+end
