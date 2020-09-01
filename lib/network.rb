@@ -34,4 +34,14 @@ attr_reader :name, :shows
       end
       result
   end
+
+  def prolific_actors
+    result = []
+    @shows.each do |show|
+      if show.shows_by_actor.values.count > 1
+        show.actors << result
+      end
+    end
+    result
+  end
 end
