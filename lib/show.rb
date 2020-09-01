@@ -18,4 +18,13 @@ class Show
     end
     highest_paid.details[:actor]
   end
+
+  def actors
+    actors = []
+    @characters.find_all do |character|
+      actors << character.details[:actor]
+    end
+    actors
+  end 
+
 end
